@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<link href="games.css" rel="stylesheet" type="text/css">
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>
+        <link href = "https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title class="title">
+        Higher or Lower
+    </title>
+    
+    </head>
+    <body class="htmlpage">
+
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="digitalart.html">Digital Art</a></li>
+        <div class="dropdown">
+          <button class="dropbtn"> Games <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="games.html">Rock Paper Scissors</a>
+            <a href="higherorlower.html">Higher or Lower</a>
+            <a href="flaggame.html">Flag Game</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> Motion graphic design <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="sketch1.html">Sketch 1</a>
+            <a href="sketch2.html">Sketch 2</a>
+            <a href="sketch3.html">Sketch 3</a>
+          </div>
+        </div>            
+        <li style="float:right"><a href="about.html">About Me</a></li>
+      </ul>
+    </div>
+
+
+
+    <header>
+            <h1>Higher or Lower</h1>
+    </header>
+
+    <div class="result">
+      <p id="message" class="message"></p>
+    </div>
+
+    <div class="higherorlower">
+      <button class="higher" id="h" onclick="guessHigher()">Higher</button>
+      <div class="circle" id="circle">OR</div>
+      <button class="lower" id="l" onclick="guessLower()">Lower</button>
+    </div>
+<!--add a fade in cross or tick in the circle if they get it right or wrong--> 
+    <div class="result">
+      <p id="score">Score: 0</p>
+      <p id="highscore">Highscore: 0</p>
+    </div>
+
+    </body>
+    <script src="hol.js" charset="utf-8"></script>
+</html>

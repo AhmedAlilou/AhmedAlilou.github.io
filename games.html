@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>
+    <link href = "https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="games.css">
+    </head>
+    <body>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="digitalart.html">Digital Art</a></li>
+        <div class="dropdown">
+          <button class="dropbtn"> Games <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="games.html">Rock Paper Scissors</a>
+            <a href="higherorlower.html">Higher or Lower</a>
+            <a href="flaggame.html">Flag Game</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> Motion graphic design <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="sketch1.html">Sketch 1</a>
+              <a href="sketch2.html">Sketch 2</a>
+              <a href="sketch3.html">Sketch 3</a>
+            </div>
+          </div>    
+        <li style="float:right"><a  class="active" href="about.html">About Me</a></li>
+      </ul>
+    </div>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <div>
+            <button class="reset-button" onclick="resetGame()">Reset Game</button>
+        </div>
+        <div class="score-board">
+            <div id="user-label" class="badge">user</div>
+            <div id="computer-label" class="badge">comp</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+
+        <div class="result">
+            <p>Choose one of the options to start.</p>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="r">
+                <img src="Images/rock.png" alt="">
+            </div>
+            <div class="choice" id="p">
+                <img src="Images/paper.png" alt="">
+            </div>
+            <div class="choice" id="s">
+                <img src="Images/scissors.png" alt="">
+            </div>
+        </div> 
+        
+        <p id="action-message">Make your move.</p>
+        <script src="rps.js" charset="utf-8"></script>
+
+        
+    </body>
+</html>
